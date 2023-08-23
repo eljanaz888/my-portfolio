@@ -8,6 +8,7 @@
     padding: 0.3rem 0.5rem;
     z-index: var(--z-tooltip);
     transition: .4s;
+    cursor: pointer;
 }
 
 .scrollup__icon {

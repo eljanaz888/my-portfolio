@@ -22,9 +22,9 @@ const Footer = () => {
                 </ul>
 
                 <div className='footer__social'>
-                    <a rel='noreferrer' href='https://www.instagram.com/eljana.zeqiraj/' className='footer__social-link' target="_blank"><i class="bx bxl-instagram"></i></a>
-                    <a rel='noreferrer' href='https://www.linkedin.com/in/eljanazeqiraj/' className='footer__social-link' target="_blank"><i class="bx bxl-linkedin"></i></a>
-                    <a rel='noreferrer' href='https://github.com/eljanaz888' className='footer__social-link' target="_blank"><i class="bx bxl-github"></i></a>
+                    <a rel="noopener noreferrer" href='https://www.instagram.com/eljana.zeqiraj/' className='footer__social-link' target="_blank"><i class="bx bxl-instagram"></i></a>
+                    <a rel="noopener noreferrer" href='https://www.linkedin.com/in/eljanazeqiraj/' className='footer__social-link' target="_blank"><i class="bx bxl-linkedin"></i></a>
+                    <a rel="noopener noreferrer" href='https://github.com/eljanaz888' className='footer__social-link' target="_blank"><i class="bx bxl-github"></i></a>
                 </div>
 
                 <span className='footer__copy'>&#169; Eljana Zeqiraj. All rights reserved</span>

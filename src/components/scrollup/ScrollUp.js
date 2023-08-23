@@ -1,18 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './scrollup.css';
 
 const ScrollUp = () => {
-    window.addEventListener('scroll', function () {
-        const scrollUp = document.querySelector(".scrollup");
+    const [showScroll, setShowScroll] = useState(false);
 
-        if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
-        else scrollUp.classList.remove("show-scroll");
-    })
+    // eslint-disable-next-line no-unused-vars
+    const handleScroll = useCallback(() => {
+        if (window.scrollY >= 560) {
+            setShowScroll(true);
+        } else {
+            setShowScroll(false);
+        }
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [handleScroll]);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
-        <a href='#' className='scrollup'>
+        <div className={`scrollup ${showScroll ? 'show-scroll' : ''}`} onClick={scrollToTop}>
             <i className='uil uil-arrow-up scrollup__icon'></i>
-        </a>
-    )
-}
+        </div>
+    );
+};
 
-export default ScrollUp
+export default ScrollUp;

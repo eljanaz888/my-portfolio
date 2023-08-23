@@ -26,7 +26,7 @@ const Services = () => {
                     <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
                         <div className='services__modal-content'>
                             <i onClick={() => toggleTab(0)} class="uil uil-times services__modal-close"></i>
-                            <h3 className='services__modal-title'></h3>
+                            <h3 className='services__modal-title'>What i do!</h3>
                             <p className='services__modal-description'>Service with 1+ year of experience. Eager to provide quality work to clients and companies</p>
 
                             <ul className='services__modal-services grid'>
@@ -63,7 +63,7 @@ const Services = () => {
                     <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
                         <div className='services__modal-content'>
                             <i onClick={() => toggleTab(0)} class="uil uil-times services__modal-close"></i>
-                            <h3 className='services__modal-title'></h3>
+                            <h3 className='services__modal-title'>What i do!</h3>
                             <p className='services__modal-description'>Service with 1+ year of experience. Eager to provide quality work to clients and companies</p>
 
                             <ul className='services__modal-services grid'>
@@ -100,7 +100,7 @@ const Services = () => {
                     <div className={toggleState === 3 ? "services__modal active-modal" : "services__modal"}>
                         <div className='services__modal-content'>
                             <i onClick={() => toggleTab(0)} class="uil uil-times services__modal-close"></i>
-                            <h3 className='services__modal-title'></h3>
+                            <h3 className='services__modal-title'>What i do!</h3>
                             <p className='services__modal-description'>Service with 1+ year of experience. Eager to provide quality work to clients and companies</p>
 
                             <ul className='services__modal-services grid'>
